@@ -4,16 +4,8 @@
 {% load static %}
 
 {% block content %}
-    <h1>este es el home</h1>
+
     <img class="bookcover" src="{% static 'images/metallica.jpeg' %}" alt="metallica">
-    {% if user.is_authenticated %}
-        <p>epale {{ user.email }}</p>
-        <form action="{% url 'logout' %}" method="post">{% csrf_token %}
-            <button type="submit">Log Out</button>
-        </form>
-    {% else %}
-        <p>no estas registrado</p>
-        <a href="{% url 'login' %}">Log In</a>
-        <a href="{% url 'signup' %}">Sing up</a>
-    {% endif %}
+    <h1>este es el home</h1>
+    
 {% endblock content %}
