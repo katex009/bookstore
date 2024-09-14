@@ -6,11 +6,11 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 
 # Create your views here.
 
-class BookListView(LoginRequiredMixin, ListView):
+class BookListView(ListView):
     model = Book
     template_name = 'books/book_list.html'
-    login_url = '/accounts/login' 
 
-class BookDetailView(DetailView):
+class BookDetailView(LoginRequiredMixin, DetailView):
     model = Book
     template_name = 'books/book_detail.html'
+    login_url = '/accounts/login'
