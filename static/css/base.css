@@ -1,10 +1,10 @@
 body {
-    min-height: 75 rem;
-    padding-top: 4.5 rem;
+    min-height: 150 rem;
+    padding-top: 10 rem;
 }
 
 h1 {
-    color: rgb(111, 8, 8);
+    color: rgb(133, 0, 0);
 }
 
 img.bookcover {

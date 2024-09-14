@@ -14,3 +14,7 @@ class BookDetailView(LoginRequiredMixin, DetailView):
     model = Book
     template_name = 'books/book_detail.html'
     login_url = '/accounts/login'
+
+class SearchResultsView(ListView):
+    model = Book
+    template_name = 'books/search.html'
