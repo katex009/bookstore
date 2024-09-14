@@ -6,7 +6,7 @@
     <h1>search results</h1>
     {% for book in book_list %}
     <div>
-        <h3><a href="{{ book.get_adsolute_url }}"></a>{{ book.title }}</h3>
+        <h3><a href="{{ book.get_absolute_url }}"></a>{{ book.title }}</h3>
         <p>Author:{{ book.author }}</p>
         <p>Price:{{ book.price }}</p>
     </div>
